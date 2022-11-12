@@ -1,0 +1,246 @@
+
+/*       loader       */
+.oper{
+	position: absolute;
+	z-index: 1000;
+    height:1000px;
+    width: 1900px;
+    top: -120%;
+    background: url(img/cortina.png);
+    animation-name: oper;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    max-width: 100%;
+}
+
+@keyframes oper{
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -50%;
+    }
+
+    100% {
+        top: -120%;
+    }
+}
+
+/*                   General                      */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', 'sans-serif';
+}
+/*          Contenedor General          */
+.contendor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+/*          Fondo          */
+header {
+    height: 100vh;
+    background: #1D1E22;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+/*          División Column          */
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+/*          Icono          */
+.menu{
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	background: white;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0;
+}
+
+@media(max-width: 460px) {
+    .menu {
+        top: 20px;
+		right: 20px;
+    }
+}
+/*          Menu          */
+.menu-nav{
+	z-index: 5;
+	position: fixed;	
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 100vh;
+	background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	transition-timing-function: ease-in-out;
+	transition: 0.4s;
+	transform: translate(110%);
+}
+
+.spread{
+	transform: translate(0);
+}
+/*          Texto Navegador          */
+.menu-nav a{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+/*          Division Filas          */
+.Column{
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*          Interlieado          */
+.element{
+	padding: 20px 0;
+	font-size: 20px;
+}
+
+/*           Persona           */
+
+.Columna2{
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*           Cuadros            */
+.cua1{
+	position: absolute;
+	top: 260px;
+	right: 100px;
+	width: 400px;
+	height: 200px;
+	background: #7C7E85;
+}
+.cua2{
+	position: absolute;
+	top: 340px;
+	right: 240px;
+	width: 400px;
+	height: 200px;
+	background: #4A4D57;
+}
+.cua3{
+	position: absolute;
+	top: 170px;
+	right: 150px;
+	width: 400px;
+	height: 200px;
+	background: #1D1E22;
+}
+
+/*          Pet          */
+.a1{
+	position: fixed;
+	right: 190px;
+	bottom: 100px;
+	width: 90px;
+	height: 90px;
+	animation-iteration-count: 1;
+}
+.a2{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	width: 270px;
+	height: 200px;
+
+}
+
+/*            Subtitulos          */
+.subtitulo{
+	text-align: center;
+	font-weight: lighter;
+	font-size: 35px;
+	margin: 20px 0;
+}
+
+
+
+/*            Imagen Superpuesta            */
+.image-light{
+	position: fixed;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translate(100%);
+	transition: transform .2s easy-in-out;
+}
+
+.show{
+	transform: translate(0);
+}
+
+.agregar-imagen{
+	width: 40%;
+	transform: scale(0);
+	transition: transform .3s .2s;
+}
+
+.showImage{
+	transform: scale(1);
+}
+
+.close{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 40px;
+	cursor: pointer;
+	background: #fff;
+	border-radius: 25%;
+}
+
+footer{
+	background: #9f8ad0;
+	padding-bottom: 0.1px;
+}
+
+.footer-content{
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+}
+
+.social-media-icon{
+	margin: 0 10px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
