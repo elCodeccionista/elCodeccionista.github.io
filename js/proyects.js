@@ -8,3 +8,7 @@ const pro6=document.querySelector('.pro6');
 pro1.addEventListener('click',()=>{
 	window.open('Proy/Pro1/index.html','_blank');
 })
+
+pro2.addEventListener('click',()=>{
+	window.open('Proy/Pro2/index.html','_blank');
+})
