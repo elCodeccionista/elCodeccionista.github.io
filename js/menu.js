@@ -16,4 +16,7 @@ const lenk2 =document.querySelector('.git');
 lenk.addEventListener('click',()=>{
 	window.open('https://www.instagram.com/el.codeccionista/','_blank');
 })
+lenk2.addEventListener('click',()=>{
+	window.open('https://github.com/elCodeccionista','_blank');
+})
 
